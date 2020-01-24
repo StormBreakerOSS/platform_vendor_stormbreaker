@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Inherit from our versioning
 $(call inherit-product, vendor/stormbreaker/config/versioning.mk)
 
