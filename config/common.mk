@@ -14,9 +14,16 @@
 # limitations under the License.
 #
 
+# Overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/stormbreaker/overlay
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
+# Launcher
 PRODUCT_PACKAGES += \
     Lawnchair
 
