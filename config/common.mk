@@ -17,6 +17,9 @@
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/stormbreaker/overlay
 
+# Inherit from fonts config
+$(call inherit-product, vendor/stormbreaker/config/fonts.mk)
+
 # Inherit from our versioning
 $(call inherit-product, vendor/stormbreaker/config/versioning.mk)
 
