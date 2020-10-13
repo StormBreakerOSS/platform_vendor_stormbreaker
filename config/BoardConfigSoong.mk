@@ -34,6 +34,7 @@ SOONG_CONFIG_stormbreakerGlobalVars += \
 SOONG_CONFIG_NAMESPACES += stormbreakerQcomVars
 SOONG_CONFIG_stormbreakerQcomVars += \
     supports_extended_compress_format \
+    uses_pre_uplink_features_netmgrd \
     uses_qti_camera_device
 
 # Only create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
@@ -45,6 +46,7 @@ endif
 # Soong bool variables
 SOONG_CONFIG_stormbreakerQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_stormbreakerQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
+SOONG_CONFIG_stormbreakerQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 
 # Set default values
 TARGET_INIT_VENDOR_LIB ?= vendor_init
