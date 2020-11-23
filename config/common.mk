@@ -19,3 +19,16 @@ $(call inherit-product, vendor/stormbreaker/config/versioning.mk)
 
 # Inherit from our kernel/header generator
 $(call inherit-product, vendor/stormbreaker/config/BoardConfigStorm.mk)
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/stormbreaker/products/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/stormbreaker/products/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/stormbreaker/products/common/bin/50-base.sh:system/addon.d/50-base.sh
+
+ifneq ($(AB_OTA_PARTITIONS),)
+PRODUCT_COPY_FILES += \
+    vendor/stormbreaker/products/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/stormbreaker/products/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/stormbreaker/products/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+endif
