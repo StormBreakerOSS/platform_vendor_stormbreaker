@@ -29,7 +29,7 @@ soong_config_module_type {
 soong_config_module_type {
     name: "surfaceflinger_qcom_extensions",
     module_type: "cc_defaults",
-    config_namespace: "stormbreakerQcomVars",
+    config_namespace: "stormbreakerGlobalVars",
     value_variables: ["qcom_display_headers_namespace"],
     properties: [
         "cppflags",
@@ -59,7 +59,7 @@ vendor_init {
 soong_config_module_type {
     name: "qti_camera_device",
     module_type: "cc_defaults",
-    config_namespace: "stormbreakerQcomVars",
+    config_namespace: "stormbreakerGlobalVars",
     bool_variables: ["uses_qti_camera_device"],
     properties: [
         "cppflags",
@@ -80,7 +80,7 @@ qti_camera_device {
 soong_config_module_type {
     name: "extended_compress_format",
     module_type: "cc_defaults",
-    config_namespace: "stormbreakerQcomVars",
+    config_namespace: "stormbreakerGlobalVars",
     bool_variables: ["supports_extended_compress_format"],
     properties: ["cflags"],
 }
