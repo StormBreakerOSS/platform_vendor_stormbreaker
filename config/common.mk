@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/stormbreaker/overlay
+
 # Inherit from our versioning
 $(call inherit-product, vendor/stormbreaker/config/versioning.mk)
 
