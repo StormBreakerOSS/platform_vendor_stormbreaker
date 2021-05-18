@@ -18,6 +18,9 @@
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/stormbreaker/overlay
 
+PRODUCT_PACKAGES += \
+    Lawnchair
+
 # Inherit from fonts config
 $(call inherit-product, vendor/stormbreaker/config/fonts.mk)
 
