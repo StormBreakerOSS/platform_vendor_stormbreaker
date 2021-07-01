@@ -60,7 +60,6 @@
 
 ifneq ($(TARGET_PROVIDES_KERNEL_MAKEFILE),true)
 ifneq ($(TARGET_NO_KERNEL),true)
-ifeq ($(LOCAL_KERNEL),)
 
 ## Externally influenced variables
 KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
@@ -366,6 +365,5 @@ endif
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
 endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
 
-endif # LOCAL_KERNEL
 endif # TARGET_NO_KERNEL
 endif # TARGET_PROVIDES_KERNEL_MAKEFILE
