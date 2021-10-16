@@ -19,6 +19,9 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+# Inherit from fonts
+$(call inherit-product, vendor/stormbreaker/fonts/fonts.mk)
+
 # Inherit from our versioning
 $(call inherit-product, vendor/stormbreaker/config/versioning.mk)
 
