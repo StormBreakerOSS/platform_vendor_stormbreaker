@@ -12,13 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Inherit from our versioning
-$(call inherit-product, vendor/stormbreaker/config/versioning.mk)
-
-# Inherit from our overlay
-$(call inherit-product, vendor/stormbreaker/config/overlay.mk)
-
-# Inherit from our kernel/header generator
-$(call inherit-product, vendor/stormbreaker/config/BoardConfigStorm.mk)
+# Vendor overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/stormbreaker/overlay
