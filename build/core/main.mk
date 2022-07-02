@@ -1,0 +1,2 @@
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.system.stormbreaker.version=$(PLATFORM_STORMBREAKER_VERSION)
