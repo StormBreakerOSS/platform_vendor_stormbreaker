@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# GrapheneOS Camera
+PRODUCT_PACKAGES += \
+    Camera
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
